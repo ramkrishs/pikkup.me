@@ -5,10 +5,11 @@
    ========================================================================== */
 
 body{
-	    background-color: #fbfbfb;
-		font-family: 'Open Sans', sans-serif;
-		
+	background-color: #fbfbfb;
+	font-family: 'Open Sans', sans-serif;
+
 }
+
 .btn-success{
 	background-color: #e67e22;
 	border-color: #e67e22;
@@ -33,8 +34,8 @@ body{
 	background:url('../img/happy_footer.png');
 	background-repeat: repeat-x;
 	background-attachment: fixed;
-    background-position: 300px 442px; 
-    
+	background-position: 300px 442px;
+
 }
 .rides{
 	margin-top: 7%;
@@ -45,7 +46,18 @@ body{
 .main-sidebar{
 	min-height: 600px;
 }
-
+.main-header .logo {
+	background-color: #5f6160;
+}
+.main-header .logo:hover {
+	background-color: #5BC5A7;
+}
+.main-header .navbar {
+	background-color: #5BC5A7;
+}
+.main-header .navbar .sidebar-toggle:hover{
+	background-color: #5BC5A7;
+}
 .logo-lg{
 	font-family: 'Grand Hotel', cursive;
 	color: #e67e22;
@@ -55,13 +67,13 @@ body{
 	padding: 10%;
 }
 .login-icon{
-	margin-top: 20%;
+	margin-top: 10%;
 	width: 200px;
 	margin-bottom: 3px;
 }
 .logo{
-	width: 250px;    
-    mask-image: url(../img/logo.svg);
+	width: 250px;
+	mask-image: url(../img/logo.svg);
 }
 .title-text{
 	font-size: 77px;
@@ -75,7 +87,7 @@ body{
 .signin{
 	width: 350px;
 	font-family: 'Open Sans', sans-serif;
-	
+
 }
 .sub{
 	position: relative;
@@ -94,9 +106,9 @@ body{
 }
 .signin .title{
 	color: #fff;
-    background: #5BC5A7;
-    padding: 15px 25px 15px 30px;
-    height: 70px;
+	background: #5BC5A7;
+	padding: 15px 25px 15px 30px;
+	height: 70px;
 }
 
 .signup-group {
@@ -127,7 +139,7 @@ body{
 	text-decoration: none;
 }
 .input-group > .input-group-addon{
-	height: 
+	height:
 }
 .sign-group {
 	height: 200px;
@@ -165,19 +177,19 @@ body{
 }
 .btn-login:hover{
 	opacity: .8;
-	
+
 }
 .social-login{
 	height: 80px;
 	background: #EDEDEE;
 }
 .s-icons{
-	
+
 	padding-left: 45px;
-    padding-top: 24px;
-    border-right: 1px solid #e0e0e0;
-    height: 80px;
-    transition: background .3s ease-in-out;
+	padding-top: 24px;
+	border-right: 1px solid #e0e0e0;
+	height: 80px;
+	transition: background .3s ease-in-out;
 
 }
 .s-icons:hover{
@@ -189,14 +201,14 @@ body{
 }
 /* enable absolute positioning */
 .inner-addon {
-  position: relative;
+	position: relative;
 }
 
 /* style glyph */
 .inner-addon .glyphicon {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
 }
 
 /* align glyph */
@@ -209,22 +221,31 @@ body{
 
 
 
-.skin-green-light  .main-header .logo {
-background-color: #5f6160;
+.main-header .navbar .sidebar-toggle {
+	color: #fff;
 }
-.skin-green-light .main-header .logo:hover {
-background-color: #5BC5A7;
+.main-header .navbar .nav > li > a {
+	color: #ffffff;
 }
-.skin-green-light  .main-header .navbar {
-background-color: #5BC5A7;
+.main-header .navbar .nav > li > a:hover,
+.main-header .navbar .nav > li > a:active,
+.main-header .navbar .nav > li > a:focus,
+.main-header .navbar .nav .open > a,
+.main-header .navbar .nav .open > a:hover,
+.main-header .navbar .nav .open > a:focus,
+.main-header .navbar .nav > .active > a {
+	background: rgba(0, 0, 0, 0.1);
+	color: #f6f6f6;
 }
-.skin-green-light .main-header .navbar .sidebar-toggle:hover{
-	background-color: #5BC5A7;
+.sidebar a {
+	color: #444444;
+}
+.sidebar-menu > li:hover > a, .skin-green-light .sidebar-menu > li.active > a {
+	color: #000000 !important;
+	background: #f4f4f5 !important;
 }
 
-
-
-
-
-
+.content-wrapper, .skin-green-light .main-footer {
+	border-left: 1px solid #d2d6de;
+}
 

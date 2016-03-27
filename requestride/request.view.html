@@ -1,0 +1,217 @@
+<div class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini">
+                        <b>
+                            PiK
+                        </b>
+                        KUP
+                    </span>
+            <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg">
+                        <b>
+                            pikkup
+                        </b>
+
+                    </span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button -->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">
+                            Toggle navigation
+                        </span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class=" user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="img/logo.svg" class="user-image" alt="User Image"/>
+                                    <span class="hidden-xs">
+                                        PIKKUP.ME
+                                    </span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                </div>
+                <div class="pull-left info">
+                    <p>
+                        {{vm.user}}
+                    </p>
+
+                </div>
+            </div>
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">
+                    MAIN NAVIGATION
+                </li>
+                <li class="active ">
+                    <a href="#">
+                        <i class="fa fa-user">
+                        </i>
+                                <span>
+                                    View Profile
+                                </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#/match">
+                        <i class="fa fa-users">
+                        </i>
+                                <span>
+                                    View Matches
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/activity">
+                        <i class="fa fa-bolt">
+                        </i>
+                                <span>
+                                    View My Activities
+                                </span>
+                    </a>
+                </li>
+
+                <li class="header">
+                    GENERAL
+                </li>
+                <li>
+                    <a href="documentation/index.html">
+                        <i class="fa fa-cog">
+                        </i>
+                                <span>
+                                    Settings
+                                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/login">
+                        <i class="fa fa-power-off">
+                        </i>
+                                <span>
+                                    Logout
+                                </span>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 600px;" >
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>Request a Ride </h1>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form  name="form" ng-submit="vm.request()" role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="orgin">
+                                Orgin
+                            </label>
+                            <div class="col-md-4">
+                                <select id="orgin" name="orgin" ng-model="vm.ride.origin" class="form-control">
+                                    <option value="utd campus">
+                                        UTD Campus
+                                    </option>
+                                    <option value="mccallum">
+                                        McCallum
+                                    </option>
+                                    <option value="utd east communities">
+                                        UTD East Communities
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="destin">Destination</label>
+                            <div class="col-md-4">
+                                <select id="destin" name="destin" ng-model="vm.ride.destin" class="form-control">
+                                    <option value="Walmaet">Wallmart</option>
+                                    <option value="Patel Brothers">Patel Brothers</option>
+                                    <option value="DFW Airport">Airport</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="date">Date</label>
+                            <div class="col-md-4">
+                                <input class="span2 col-md-2 form-control" id="date" ng-model="vm.ride.date" name="date" type="text" placeholder="mm/dd/yyyy">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+
+                                <button type="submit" class="btn btn-block btn-lg btn-success">Request Ride</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br/>
+            <br/>
+
+
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <div class="footer-img"></div>
+    <footer class="main-footer">
+
+        <div class="pull-right hidden-xs">
+            <b>
+                beta
+            </b>
+            1.0
+        </div>
+        <strong>
+            Copyright &copy; 2016
+            <a href="#">
+                Pikkup.me
+            </a>
+            .
+        </strong>
+        All rights reserved.
+    </footer>
+
+
+
+    <!-- /.control-sidebar -->
+    <!--
+        Add the sidebar's background. This div must be placed
+        immediately after the control sidebar
+    -->
+    <div class="control-sidebar-bg">
+    </div>
+</div>
+    </div>
