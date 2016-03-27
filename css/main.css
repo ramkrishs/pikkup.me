@@ -13,6 +13,18 @@ body{
 	background-color: #e67e22;
 	border-color: #e67e22;
 }
+.btn-green{
+	background-color: #2ecc71;
+	border-color: #2ecc71;
+	color: #fff;
+	border-radius: 0px;
+}
+.btn-green:hover{
+	background-color: #2ecc71;
+	border-color: #2ecc71;
+	color: #fff;
+	border-radius: 0px;
+}
 .btn-success:hover{
 	background-color: #e67e22;
 	border-color: #e67e22;
@@ -33,13 +45,13 @@ body{
 .main-sidebar{
 	min-height: 600px;
 }
-.skin-green-light .main-header .logo {
+.skin-green-light  .main-header .logo {
 background-color: #5f6160;
 }
 .skin-green-light .main-header .logo:hover {
 background-color: #5BC5A7;
 }
-.skin-green-light .main-header .navbar {
+.skin-green-light  .main-header .navbar {
 background-color: #5BC5A7;
 }
 .skin-green-light .main-header .navbar .sidebar-toggle:hover{
