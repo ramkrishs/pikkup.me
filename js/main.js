@@ -7,4 +7,7 @@ jQuery(document).ready(function($) {
 		var icon  = $(this).find('.fa');
 		icon.css('color', '#BDCBCB');
 	});
+
+	$('.content-wrapper').css('min-height', '600px');
+	
 });

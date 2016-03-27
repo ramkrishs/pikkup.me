@@ -20,8 +20,8 @@
         <div class="container">
             <div class="row login-panel">
                 <div class="col-xs-6">
-                    <div class="login-icon">
-                        <img src="img/logo.svg" class="logo" alt="Welcome to Mail App" />
+                    <div class="login-icon ">
+                        <img src="img/logo.svg" class="logo " alt="Welcome to Mail App" />
                         
                     </div>
                     <h4 class="title-text">pikkup</h4>
@@ -31,43 +31,40 @@
                         <div  class="form-groups">
                             <div class="title">
                                 <label for="signinlabel">
-                                    Sign Up
+                                    Sign In
                                 </label>
                                 <sup class="sub">
                                     or
                                     <a href="">
-                                        sign in
+                                        sign up
                                     </a>
                                 </sup>
                             </div>
-                            <div class="signup-group">
-                                <div class="content">
-                                    <div class="inner-addon left-addon">
-                                        <i class="glyphicon glyphicon-envelope">
-                                        </i>
-                                        <input type="text" class="form-control" placeholder="utdallas email" />
+                            <div class="sign-group">
+                                <form name="form" ng-submit="vm.login()" role="form">
+                                    <div class="content">
+                                        <div class="inner-addon left-addon">
+                                            <i class="glyphicon glyphicon-user">
+                                            </i>
+                                            <input type="text" class="form-control" placeholder="Username" />
+                                        </div>
+                                        <div class="inner-addon left-addon">
+                                            <i class="glyphicon glyphicon-lock">
+                                            </i>
+                                            <input type="text" class="form-control" placeholder="Password" />
+                                        </div>
+                                        <a class="login-link pull-right" href="#">
+                                            <small>
+                                                Forgot password?
+                                            </small>
+                                        </a>
+                                        <button type="submit" class="form-control btn-login" >
+                                            <span class="text-center">
+                                                Sign In
+                                            </span>
+                                        </button>
                                     </div>
-                                    <div class="inner-addon left-addon">
-                                        <i class="glyphicon glyphicon-user">
-                                        </i>
-                                        <input type="text" class="form-control" placeholder="Username" />
-                                    </div>
-                                    <div class="inner-addon left-addon">
-                                        <i class="glyphicon glyphicon-lock">
-                                        </i>
-                                        <input type="text" class="form-control" placeholder="Password" />
-                                    </div>
-                                    <a class="login-link pull-right" href="#">
-                                        <small>
-                                            Forgot password?
-                                        </small>
-                                    </a>
-                                    <button type="button" class="form-control btn-login" >
-                                        <span class="text-center">
-                                            Sign Up
-                                        </span>
-                                    </button>
-                                </div>
+                                </form>
                             </div>
                             <div class="social-login">
                                 <div class="col-xs-4 s-icons">
