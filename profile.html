@@ -160,22 +160,69 @@
             <div class="content-wrapper" style="min-height: 600px;" >
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                      
+                      <h1>User Profile </h1>
                 </section>
                 <!-- Main content -->
                 <section class="content">
-                    <div class="row rides">
+                    <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <a href="#fakelink" class="btn btn-block btn-lg btn-success">Post Ride</a>
+                        <form name="form" ng-submit="vm.profile()" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="username">
+                                        Username
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input class="span2 col-md-2 form-control" id="username" name="username" type="text" placeholder="username" ng-model="vm.username" disabled>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="email">
+                                        Email
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input class="span2 col-md-2 form-control" ng-model="vm.email" id="email" name="email" type="email" placeholder="email" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="college">
+                                        College
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input class="span2 col-md-2 form-control" id="college" name="college" type="text" placeholder="college" ng-model="vm.college" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="address">
+                                        Address
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input class="span2 col-md-2 form-control" id="address" name="address" type="text" placeholder="address" ng-model="vm.address" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="phone">
+                                        Phone
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input class="span2 col-md-2 form-control" id="phone" name="phone" type="text" placeholder="phone" ng-model="vm.phone">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                
+                                    <button type="submit"  class="btn btn-block btn-lg btn-success">Save Info</button>
+                                
+                                    </div>
+                                </div>
+                            </form>
                     </div>
                     </div>
                     <br/>
                     <br/>
-                    <div class="row rides">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a href="#fakelink" class="btn btn-block btn-lg btn-success">Request Ride</a>
-                    </div>
-                    </div>
+                    
                     
                     
                 </section>

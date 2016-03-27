@@ -160,22 +160,74 @@
             <div class="content-wrapper" style="min-height: 600px;" >
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                      
+                      <h1>Post a Ride </h1>
                 </section>
                 <!-- Main content -->
                 <section class="content">
-                    <div class="row rides">
+                    <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <a href="#fakelink" class="btn btn-block btn-lg btn-success">Post Ride</a>
+                        <form name="form" ng-submit="vm.post()" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="orgin">
+                                        Orgin
+                                    </label>
+                                    <div class="col-md-4">
+                                        <select id="orgin" name="orgin"  ng-model="vm.orgin" class="form-control">
+                                            <option value="1">
+                                                UTD Campus
+                                            </option>
+                                            <option value="2">
+                                                McCallum
+                                            </option>
+                                            <option value="3">
+                                                UTD East Communities
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="destin">Destination</label>
+                                  <div class="col-md-4">
+                                    <select id="destin" name="destin" ng-model="vm.destin" class="form-control">
+                                      <option value="1">Wallmart</option>
+                                      <option value="2">Patel Brothers</option>
+                                      <option value="3">Airport</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="available-seats">Available Seats</label>
+                                  <div class="col-md-4">
+                                    <select id="available-seats" name="available-seats" ng-model="vm.avaiseats" class="form-control">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="col-md-4 control-label" for="date">Date</label>
+                                  <div class="col-md-4">
+                                    <input class="span2 col-md-2 form-control" id="date"  ng-model="vm.date" name="date" type="text" placeholder="mm/dd/yyyy">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                
+                                    <button type="submit" class="btn btn-block btn-lg btn-success">Post Ride</button>
+                                
+                                    </div>
+                                </div>
+                            </form>
                     </div>
                     </div>
                     <br/>
                     <br/>
-                    <div class="row rides">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a href="#fakelink" class="btn btn-block btn-lg btn-success">Request Ride</a>
-                    </div>
-                    </div>
+                    
                     
                     
                 </section>
