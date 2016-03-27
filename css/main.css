@@ -45,18 +45,7 @@ body{
 .main-sidebar{
 	min-height: 600px;
 }
-.skin-green-light  .main-header .logo {
-background-color: #5f6160;
-}
-.skin-green-light .main-header .logo:hover {
-background-color: #5BC5A7;
-}
-.skin-green-light  .main-header .navbar {
-background-color: #5BC5A7;
-}
-.skin-green-light .main-header .navbar .sidebar-toggle:hover{
-	background-color: #5BC5A7;
-}
+
 .logo-lg{
 	font-family: 'Grand Hotel', cursive;
 	color: #e67e22;
@@ -220,7 +209,18 @@ background-color: #5BC5A7;
 
 
 
-
+.skin-green-light  .main-header .logo {
+background-color: #5f6160;
+}
+.skin-green-light .main-header .logo:hover {
+background-color: #5BC5A7;
+}
+.skin-green-light  .main-header .navbar {
+background-color: #5BC5A7;
+}
+.skin-green-light .main-header .navbar .sidebar-toggle:hover{
+	background-color: #5BC5A7;
+}
 
 
 
