@@ -41,21 +41,22 @@
                                 </sup>
                             </div>
                             <div class="signup-group">
+                            <form name="form" ng-submit="vm.register()" action="">
                                 <div class="content">
                                     <div class="inner-addon left-addon">
                                         <i class="glyphicon glyphicon-envelope">
                                         </i>
-                                        <input type="text" class="form-control" placeholder="utdallas email" />
+                                        <input type="text" class="form-control"  ng-model="vm.email"  placeholder="utdallas email" />
                                     </div>
                                     <div class="inner-addon left-addon">
                                         <i class="glyphicon glyphicon-user">
                                         </i>
-                                        <input type="text" class="form-control" placeholder="Username" />
+                                        <input type="text" class="form-control"  ng-model="vm.username"  placeholder="Username" />
                                     </div>
                                     <div class="inner-addon left-addon">
                                         <i class="glyphicon glyphicon-lock">
                                         </i>
-                                        <input type="text" class="form-control" placeholder="Password" />
+                                        <input type="text" class="form-control"  ng-model="vm.password"  placeholder="Password" />
                                     </div>
                                     
                                     <button type="button" class="form-control btn-login" >
@@ -64,6 +65,7 @@
                                         </span>
                                     </button>
                                 </div>
+                                </form>
                             </div>
                             <div class="social-login">
                                 <div class="col-xs-4 s-icons">

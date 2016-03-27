@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js">
+        </script>
+        <script type="text/javascript">
+            $.ajax({
+            url: "https://api.uber.com/v1/estimates/price",
+            headers: {
+            Authorization: "Token " + "3z1RatO5tPNN8TvJ28qV6Im0VSW4ehh4VG3FRYjA"
+            },
+            data: {
+            start_latitude: '32.9843155',
+            start_longitude: '-96.7479977',
+            end_latitude: '32.9983032',
+            end_longitude: '-96.7357652'
+            },
+            success: function(result) {
+            console.log(result);
+            }
+            });
+            
+        </script>
+    </body>
+</html>
